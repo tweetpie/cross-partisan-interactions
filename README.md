@@ -8,6 +8,22 @@ This repository contains the dataset for the paper "Cross-Partisan Interactions 
 
 Many social media studies argue that social media creates echo chambers where some users only interact with peers of the same political orientation. However, recent studies suggest that a substantial amount of Cross-Partisan Interactions (CPIs) do exist — even within echo chambers, but they may be toxic. There is no consensus about how such interactions occur and when they lead to healthy or toxic dialogue. In this paper, we study a comprehensive Twitter dataset that consists of 3 million tweets from 2020 related to the U.S. context to understand the dynamics behind CPIs. We investigate factors that are more associated with such interactions, including how users engage in CPIs, which topics are more contentious, and what are the stances associated with healthy interactions. We find that CPIs are significantly influenced by the nature of the topics being discussed, with politically charged events acting as strong catalysts. The political discourse and pre-established political views sway how users participate in CPIs, but the direction in which users go is nuanced. While Democrats engage in cross-partisan interactions slightly more frequently, these interactions often involve more negative and nonconstructive stances compared to their intra-party interactions. In contrast, Republicans tend to maintain a more consistent tone across interactions. Although users are more likely to engage in CPIs with popular accounts in general, this is less common among Republicans who often engage in CPIs with accounts with a low number of followers for personal matters. Our study has implications beyond Twitter as identifying topics with low toxicity and high CPI can help highlight potential opportunities for reducing polarization while topics with high toxicity and low CPI may action targeted interventions when moderating harm.
 
+
+## Citation
+
+If you use this dataset, please cite:
+
+```bibtex
+@inproceedings{ccetinkaya2025cross,
+  title={Cross-Partisan Interactions on Twitter},
+  author={{\c{C}}etinkaya, Yusuf M{\"u}cahit and Ghafouri, Vahid and Suarez-Tangil, Guillermo and Such, Jose and Elmas, Tu{\u{g}}rulcan},
+  booktitle={Proceedings of the International AAAI Conference on Web and Social Media},
+  volume={19},
+  pages={324--340},
+  year={2025}
+}
+```
+
 ## Dataset Structure
 
 The dataset consists of several compressed CSV files (`.csv.bz2`) containing different aspects of the Twitter data:
@@ -417,18 +433,3 @@ merged_df = create_merged_dataset()
 3. **CPI Calculation**: The cross-partisan interaction logic uses ideal point thresholds. Adjust the threshold in the `is_cross_partisan` function based on your analysis needs. Used threshold is shared in the publication.
 
 4. **Data Quality**: Always verify data quality and handle missing values appropriately for your specific analysis.
-
-## Citation
-
-If you use this dataset, please cite:
-
-```bibtex
-@inproceedings{ccetinkaya2025cross,
-  title={Cross-Partisan Interactions on Twitter},
-  author={{\c{C}}etinkaya, Yusuf M{\"u}cahit and Ghafouri, Vahid and Suarez-Tangil, Guillermo and Such, Jose and Elmas, Tu{\u{g}}rulcan},
-  booktitle={Proceedings of the International AAAI Conference on Web and Social Media},
-  volume={19},
-  pages={324--340},
-  year={2025}
-}
-```
